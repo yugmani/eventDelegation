@@ -1,16 +1,17 @@
 .container {
-    background-color:gray;
+    background-color:white;
     margin:0;
     padding:0;
-    height:100vh;
+    height:auto;
 }
 
 #main-content {
     margin:0 auto;
-    width:500px;
-    height:auto;
-    display:flex;
-    justify-content: space-between;
+    /* width:500px;
+    height:auto; */
+    display:grid;
+    grid-template-columns:4fr 1fr;
+    /* justify-content: space-between; */
     text-transform:capitalize;
     font-size:20px;
     text-transform:capitalize;
@@ -19,19 +20,36 @@
 }
 
 #selected-items {
-    width:200px;
+    /* width:600px; */
     /* padding:20px; */
     background-color:lightgray;
 }
 
 #items-list {
-    width:300px;
+    /* width:300px; */
     /* padding:20px; */
+    width:90%;
     background-color:whitesmoke;
 }
 
 #items {
-    text-align:center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+
+.fruits {
+    /* width:450px; */
+    /* height:80%; */
+    background-color:lightgray;
+    margin:20px;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-radius:15px;
 }
 
 table {
@@ -39,7 +57,7 @@ table {
 }
 
 table tr {
-    padding:5px 0px;
+    padding:5px 10px;
     margin:0;
     display:flex;
     justify-content: space-between;
@@ -50,11 +68,13 @@ tr:nth-child(odd){
 }
 
 table tr td {
-    padding-left:10px;
+    /* padding-left:10px; */
 }
 
 button {
+    margin:0 auto;
     padding:5px 5px;
+    width:60%;
     border:none;
     outline:none;
     border-radius:15px;
@@ -64,13 +84,13 @@ button {
 
 #cart {
     background-color:silver;
-    text-align:center;
+    text-align:left;
 }
 
 #cart div {
-    width:100%;
+    /* width:100%; */
     margin:0;
-    padding:5px 0px;
+    padding:5px 5px 5px 10px;
     font-style:italic;
 }
 
@@ -80,4 +100,10 @@ button {
 
 h3 {
     padding-left:10px;
+}
+
+img {
+    width:90%;
+    height:auto;
+    border-radius:50%;
 }
